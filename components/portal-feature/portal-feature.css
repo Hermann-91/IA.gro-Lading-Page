@@ -1,0 +1,62 @@
+/* -------------------------------------------------------------
+   Estilos específicos do Portal do Produtor
+   ------------------------------------------------------------- */
+.portal-feature-section {
+    padding: 100px 0;
+}
+
+.portal-wrapper {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.portal-content h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    background: linear-gradient(135deg, #FFF, var(--text-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.portal-content p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+.feature-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.feature-list li {
+    position: relative;
+    padding-left: 28px;
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.feature-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* -------------------------------------------------------------
+   Responsividade
+   ------------------------------------------------------------- */
+@media (max-width: 991px) {
+    .portal-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}

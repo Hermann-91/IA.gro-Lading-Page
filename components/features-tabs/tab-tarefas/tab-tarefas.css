@@ -1,0 +1,50 @@
+.todo-demo-box {
+    width: 100%;
+    max-width: 420px;
+    background-color: var(--bg-main);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+.todo-item .checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: var(--primary);
+}
+
+.todo-item.checked span:nth-child(2) {
+    text-decoration: line-through;
+    color: var(--text-muted);
+}
+
+.tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: auto;
+}
+
+.tag-success { background-color: rgba(46, 213, 115, 0.15); color: var(--primary); }
+.tag-warning { background-color: rgba(213, 115, 46, 0.15); color: var(--accent); }
+.tag-danger { background-color: rgba(255, 71, 87, 0.15); color: #ff4757; }

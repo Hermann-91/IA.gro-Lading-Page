@@ -1,0 +1,9 @@
+import './components/menu-bar/menu-bar.js';
+import './components/hero-section/hero-section.js';
+import './components/problem-section/problem-section.js';
+import './components/features-tabs/features-tabs.js';
+import './components/portal-feature/portal-feature.js';
+import './components/roles-section/roles-section.js';
+import './components/pricing-section/pricing-section.js';
+import './components/faq-section/faq-section.js';
+import './components/footer-section/footer-section.js';

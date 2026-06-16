@@ -1,0 +1,58 @@
+/* -------------------------------------------------------------
+   Estilos específicos da Seção Para Quem É (Roles)
+   ------------------------------------------------------------- */
+.roles-section {
+    padding: 100px 0;
+}
+
+.roles-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.role-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    text-align: center;
+    transition: var(--transition-fast);
+}
+
+.role-card:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+    background-color: var(--bg-card-hover);
+    transform: scale(1.02);
+}
+
+.role-card h3 {
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.role-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* Tema Claro */
+body.light-theme .role-card h3 {
+    color: var(--primary);
+}
+
+/* -------------------------------------------------------------
+   Responsividade
+   ------------------------------------------------------------- */
+@media (max-width: 991px) {
+    .roles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .roles-grid {
+        grid-template-columns: 1fr;
+    }
+}

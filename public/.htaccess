@@ -1,0 +1,2 @@
+# Desativa qualquer regra de reescrita herdada da raiz
+RewriteEngine Off

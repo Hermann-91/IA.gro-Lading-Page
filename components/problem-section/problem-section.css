@@ -1,0 +1,68 @@
+/* -------------------------------------------------------------
+   Estilos específicos da Seção de Problemas
+   ------------------------------------------------------------- */
+.problem-section {
+    padding: 100px 0;
+    background-color: hsl(218, 28%, 10%);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.problem-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.problem-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 40px 30px;
+    transition: var(--transition-fast);
+}
+
+.problem-card:hover {
+    transform: translateY(-8px);
+    background-color: var(--bg-card-hover);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+}
+
+.problem-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.problem-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* -------------------------------------------------------------
+   Adaptações do Tema Claro (Encapsuladas no Componente)
+   ------------------------------------------------------------- */
+body.light-theme .problem-section {
+    background-color: hsl(96.36, 12.32%, 73.78%);
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light-theme .problem-card {
+    border-color: rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+/* -------------------------------------------------------------
+   Responsividade da Seção
+   ------------------------------------------------------------- */
+@media (max-width: 991px) {
+    .problem-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}

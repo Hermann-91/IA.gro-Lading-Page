@@ -1,0 +1,197 @@
+/* -------------------------------------------------------------
+   Estilos específicos da Seção de Preços (Pricing)
+   ------------------------------------------------------------- */
+.pricing-section {
+    padding: 100px 0;
+    background-color: hsl(218, 28%, 10%);
+    border-top: 1px solid var(--border-color);
+}
+
+.pricing-card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 50px 40px;
+    width: 100%;
+    max-width: 550px;
+    position: relative;
+    transition: var(--transition-fast);
+}
+
+.pricing-card.recommended {
+    border-color: var(--primary);
+    box-shadow: 0 20px 45px rgba(46, 213, 115, 0.1);
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-badge {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, var(--accent), hsl(28, 80%, 45%));
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 50px;
+    white-space: nowrap;
+    box-shadow: 0 4px 12px var(--accent-glow);
+}
+
+.pricing-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.pricing-card .description {
+    color: var(--text-secondary);
+    text-align: center;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+}
+
+.price-box {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.price-box .old-price {
+    font-size: 0.9rem;
+    text-decoration: line-through;
+    color: var(--text-muted);
+    display: block;
+    margin-bottom: 6px;
+}
+
+.price-box .new-price-wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.price-box .new-price-wrapper .currency {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.price-box .new-price-wrapper .price {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--primary);
+}
+
+.price-box .new-price-wrapper .period {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.price-box .price-note {
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.pricing-features {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.pricing-features li {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pricing-features li strong {
+    color: var(--text-primary);
+}
+
+.pricing-features li::before {
+    content: "✓";
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.pricing-cta-box {
+    text-align: center;
+}
+
+.trial-text {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 12px;
+}
+
+/* -------------------------------------------------------------
+   Tema Claro
+   ------------------------------------------------------------- */
+body.light-theme .pricing-section {
+    background-color: hsl(96.36, 12.32%, 73.78%);
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light-theme .pricing-card {
+    background-color: var(--bg-card);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+}
+
+body.light-theme .pricing-card.recommended {
+    border-color: var(--primary);
+    background: linear-gradient(180deg, var(--bg-card) 0%, hsl(210, 20%, 97%) 100%);
+}
+
+body.light-theme .price-box {
+    background-color: hsl(210, 20%, 94%);
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light-theme .price-box .old-price {
+    color: var(--text-muted);
+}
+
+body.light-theme .price-box .new-price-wrapper .price {
+    color: var(--primary);
+}
+
+body.light-theme .price-box .price-note {
+    color: var(--accent);
+}
+
+body.light-theme .pricing-features li::before {
+    color: var(--primary);
+}
+
+/* -------------------------------------------------------------
+   Responsividade
+   ------------------------------------------------------------- */
+@media (max-width: 991px) {
+    .pricing-features {
+        grid-template-columns: 1fr;
+    }
+}

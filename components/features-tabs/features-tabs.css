@@ -1,0 +1,121 @@
+.features-tabs-section {
+    padding: 100px 0;
+    background-color: hsl(218, 28%, 6%);
+}
+
+.tabs-control {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 50px;
+}
+
+.tab-btn {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px 28px;
+    border-radius: 50px;
+    border: 1px solid var(--border-color);
+    background-color: rgba(255, 255, 255, 0.03);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.tab-btn:hover {
+    color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.tab-btn.active {
+    background-color: var(--primary);
+    color: hsl(218, 28%, 5%);
+    border-color: var(--primary);
+    box-shadow: 0 4px 15px var(--primary-glow);
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tab-pane-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 50px;
+    box-shadow: var(--shadow-premium);
+}
+
+.tab-pane-text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.tab-pane-text p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+}
+
+body.light-theme .features-tabs-section {
+    background-color: hsl(96.36, 12.32%, 73.78%);
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light-theme .tab-pane-grid {
+    border-color: rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+body.light-theme .tab-btn {
+    background-color: hsl(210, 20%, 91%);
+    color: var(--text-secondary);
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+body.light-theme .tab-btn:hover {
+    background-color: hsl(210, 20%, 86%);
+    color: var(--text-primary);
+}
+
+body.light-theme .tab-btn.active {
+    background-color: var(--primary);
+    color: #ffffff !important;
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px var(--primary-glow);
+}
+
+@media (max-width: 991px) {
+    .tab-pane-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tabs-control {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+    .tab-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
