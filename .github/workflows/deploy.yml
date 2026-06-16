@@ -3,7 +3,7 @@ name: Deploy Landing Page to cPanel (HostGator)
 on:
   push:
     branches:
-      - main
+      - web
 
 jobs:
   build-and-deploy:
