@@ -1,14 +1,14 @@
-# 🚜 IA.gro - Gestão Rural 🌟
+# 🚜 SafraIA - Gestão Rural 🌟
 
 > O ecossistema digital inteligente focado no manejo operacional, controle financeiro e inteligência de mercado para a cacauicultura.
 
-O **IA.gro** é uma landing page de altíssima conversão, projetada com estética premium e arquitetura modular moderna para apresentar um software de gestão agrícola dedicado ao produtor de cacau.
+O **SafraIA** é uma landing page de altíssima conversão, projetada com estética premium e arquitetura modular moderna para apresentar um software de gestão agrícola dedicado ao produtor de cacau.
 
 ---
 
 ## 🎯 Proposta do Projeto
 
-O cultivo de cacau exige precisão operacional e acompanhamento constante do mercado. O **IA.gro** resolve a desconexão do produtor no campo oferecendo:
+O cultivo de cacau exige precisão operacional e acompanhamento constante do mercado. O **SafraIA** resolve a desconexão do produtor no campo oferecendo:
 * **Inteligência de Mercado**: Cotações da arroba do cacau em tempo real baseadas na Bolsa de Nova York (NY).
 * **Clima Inteligente**: Dados meteorológicos locais atualizados a cada 30 minutos para guiar adubações, podas e colheitas.
 * **Assistente com Inteligência Artificial**: Um engenheiro agrônomo virtual de bolso, treinado especificamente no combate a pragas (como a Vassoura-de-Bruxa, Monilíase e Podridão Parda) e recomendações de manejo.
