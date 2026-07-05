@@ -39,5 +39,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           # Aponta exatamente para o diretório da HostGator onde o site reside
-          server-dir: public_html/ia.gro/
+          server-dir: ./
           dry-run: false
